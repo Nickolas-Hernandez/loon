@@ -1,0 +1,17 @@
+{
+  "extends": "next/core-web-vitals",
+  "rules": {
+        "semi": ["error", "always"],
+        "quotes": ["error", "single"],
+        "no-console": "warn",
+        "no-unused-vars": "error",
+        "no-undef": "error",
+        "no-irregular-whitespace": "error",
+        "no-trailing-spaces": "error",
+        "no-multiple-empty-lines": "error",
+        "eqeqeq": ["error", "smart"],
+        "camelcase": "error",
+        "curly": "error",
+        "default-case": "error"
+    }
+}
