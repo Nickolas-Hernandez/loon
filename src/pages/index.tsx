@@ -9,8 +9,12 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className=''>
+      <main className='dark'>
         <h1 className=''>Loon</h1>
+        <div className="box w-40 h-40 bg-primary dark:bg-dark-primary">
+          <div className="box w-28 h-28 bg-accent dark:bg-dark-accent">
+          </div>
+        </div>
       </main>
     </>
   );
