@@ -4,11 +4,11 @@ import { ThemeContext } from '@/context/themeContext';
 import Calendar from '@/components/calendar';
 
 export default function Home() {
-  const { theme, toggleTheme } = useContext(ThemeContext)!;
+  const { theme } = useContext(ThemeContext)!;
 
-  const handleThemeToggle = () => {
-    toggleTheme();
-  }
+  // const handleThemeToggle = () => {
+  //   toggleTheme();
+  // }
 
   return (
     <>
@@ -21,7 +21,7 @@ export default function Home() {
       <body className={theme === 'dark' ? 'dark' : 'light'}>
         <main className='bg-white dark:bg-black'>
           <Calendar />
-          <button onClick={handleThemeToggle}>Toggle</button>
+          {/* <button onClick={handleThemeToggle}>Toggle</button> */}
         </main>
       </body>
     </>
