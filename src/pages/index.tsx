@@ -1,7 +1,15 @@
 import Head from 'next/head';
-import Header from '@/components/header';
+import { useContext } from 'react';
+import { ThemeContext } from '@/context/themeContext';
+import Calendar from '@/components/calendar';
 
 export default function Home() {
+  const { theme, toggleTheme } = useContext(ThemeContext)!;
+
+  const handleThemeToggle = () => {
+    toggleTheme();
+  }
+
   return (
     <>
       <Head>
@@ -10,9 +18,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <body className=''>
+      <body className={theme === 'dark' ? 'dark' : 'light'}>
         <main className='bg-white dark:bg-black'>
-          <Header />
+          <Calendar />
+          <button onClick={handleThemeToggle}>Toggle</button>
         </main>
       </body>
     </>
