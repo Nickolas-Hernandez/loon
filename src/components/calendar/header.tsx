@@ -24,7 +24,7 @@ const Header = () => {
             width={ 10 }
             height={ 10 } />
           </button>
-          <p>April, 2023</p>
+          <p>April 2023</p>
           <button className='pl-2'>
             <Image
             className='-rotate-90'
