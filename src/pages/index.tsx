@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import { useContext } from 'react';
 import { ThemeContext } from '@/context/themeContext';
-import Calendar from '@/components/calendar';
+import Calendar from '@/views/calendar';
 
 export default function Home() {
   const { theme } = useContext(ThemeContext)!;

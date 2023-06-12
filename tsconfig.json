@@ -19,6 +19,7 @@
       "@/components": ["./src/components"],
       "@/context": ["./src/context"],
       "@/interfaces": ["./src/interfaces"],
+      "@/views": ["./src/views"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

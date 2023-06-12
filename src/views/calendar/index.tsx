@@ -1,6 +1,5 @@
-// !! Use views/calendar/index.tsx for calendar view. This file is calendar component. !!
-
-import Header from './header';
+//calendar view
+import Header from '@/components/calendar';
 
 export const Calendar = () => {
   return (
